@@ -1,0 +1,16 @@
+/home/cleo/ru-sipac-api-main/src/main/java/model/Carteira.java
+/home/cleo/ru-sipac-api-main/src/main/java/model/Transacao.java
+/home/cleo/ru-sipac-api-main/src/main/java/model/Credenciais.java
+/home/cleo/ru-sipac-api-main/src/main/java/util/ServicoHttp.java
+/home/cleo/ru-sipac-api-main/src/main/java/Main.java
+/home/cleo/ru-sipac-api-main/src/main/java/exception/ExcecaoUsuarioSemCadastroRU.java
+/home/cleo/ru-sipac-api-main/src/main/java/helper/AnalisadorRegex.java
+/home/cleo/ru-sipac-api-main/src/main/java/exception/ExcecaoErroDeConectividade.java
+/home/cleo/ru-sipac-api-main/src/main/java/util/Endpoints.java
+/home/cleo/ru-sipac-api-main/src/main/java/util/ColecaoRegex.java
+/home/cleo/ru-sipac-api-main/src/main/java/model/Usuario.java
+/home/cleo/ru-sipac-api-main/src/main/java/model/Perfil.java
+/home/cleo/ru-sipac-api-main/src/main/java/exception/ExcecaoUsuarioSenhaInvalido.java
+/home/cleo/ru-sipac-api-main/src/main/java/util/Login.java
+/home/cleo/ru-sipac-api-main/src/main/java/controller/ControladorUsuario.java
+/home/cleo/ru-sipac-api-main/src/main/java/model/HistoricoTransacoes.java

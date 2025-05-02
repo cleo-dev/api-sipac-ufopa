@@ -1,0 +1,606 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="background" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript" src="/sipac/faces/myFacesExtensionResource/org.apache.myfaces.renderkit.html.util.MyFacesResourceLoader/17461822/navmenu.jscookmenu.HtmlJSCookMenuRenderer/JSCookMenu.js"><!--
+
+//--></script>
+<script type="text/javascript" src="/sipac/faces/myFacesExtensionResource/org.apache.myfaces.renderkit.html.util.MyFacesResourceLoader/17461822/navmenu.jscookmenu.HtmlJSCookMenuRenderer/MyFacesHack.js"><!--
+
+//--></script>
+<script type="text/javascript"><!--
+var myThemeOfficeBase='/sipac/faces/myFacesExtensionResource/org.apache.myfaces.renderkit.html.util.MyFacesResourceLoader/17461822/navmenu.jscookmenu.HtmlJSCookMenuRenderer/ThemeOffice/';
+//--></script>
+<script type="text/javascript" src="/sipac/faces/myFacesExtensionResource/org.apache.myfaces.renderkit.html.util.MyFacesResourceLoader/17461822/navmenu.jscookmenu.HtmlJSCookMenuRenderer/ThemeOffice/theme.js"><!--
+
+//--></script>
+<link rel="stylesheet" href="/sipac/css/jscookmenu/ThemeOffice/theme.css" type="text/css" />
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<link class="component" href="/sipac/a4j/s/3_3_3.Finalorg/richfaces/renderkit/html/css/basic_classes.xcss/DATB/eAF7sqpgb-jyGdIAFrMEaw__.jsf" rel="stylesheet" type="text/css" /><link class="component" href="/sipac/a4j/s/3_3_3.Finalorg/richfaces/renderkit/html/css/extended_classes.xcss/DATB/eAF7sqpgb-jyGdIAFrMEaw__.jsf" media="rich-extended-skinning" rel="stylesheet" type="text/css" /><script src="/sipac/a4j/g/3_3_3.Finalorg.ajax4jsf.javascript.AjaxScript.jsf" type="text/javascript"></script><script src="/sipac/a4j/g/3_3_3.Finalorg.ajax4jsf.javascript.PrototypeScript.jsf" type="text/javascript"></script><script src="/sipac/a4j/g/3_3_3.Finalorg.ajax4jsf.javascript.ImageCacheScript.jsf" type="text/javascript"></script><script src="/sipac/a4j/g/3_3_3.Finalorg/richfaces/renderkit/html/scripts/browser_info.js.jsf" type="text/javascript"></script><script src="/sipac/a4j/g/3_3_3.Finalorg/ajax4jsf/javascript/scripts/form.js.jsf" type="text/javascript"></script><script src="/sipac/a4j/g/3_3_3.Finalscripts/tabPanel.js.jsf" type="text/javascript"></script><link class="component" href="/sipac/a4j/s/3_3_3.Finalcss/tabPanel.xcss/DATB/eAF7sqpgb-jyGdIAFrMEaw__.jsf" rel="stylesheet" type="text/css" /><script type="text/javascript">window.RICH_FACES_EXTENDED_SKINNING_ON=true;</script><script src="/sipac/a4j/g/3_3_3.Finalorg/richfaces/renderkit/html/scripts/skinning.js.jsf" type="text/javascript"></script><script type="text/javascript" src="/shared/jsBundles/jawr_loader.js" ></script>
+    <script type="text/javascript">
+    	JAWR.loader.style('/bundles/css/sipac_base.css', 'all');
+		JAWR.loader.style('/css/ufrn_print.css', 'print');
+	
+    	JAWR.loader.script('/bundles/js/sipac_base.js');
+   		JAWR.loader.script('/bundles/js/ext2.js');
+    </script>
+	<script type="text/javascript" src="/sipac/jsBundles/633875157/bundles/js/sipac-outros.js" ></script>
+
+
+	<link href="/shared/css/ufrn.css" rel="stylesheet" type="text/css"/>
+	
+	<!-- FontAwesome -->
+	<link rel="stylesheet" type="text/css" href="/shared/beta/css/font-awesome.css" media="screen" />
+	
+	<!-- jQuery -->
+	<script type="text/javascript" src="/shared/javascript/jquery/jquery-1.4.4.min.js"></script>
+	<script>
+		jQuery.noConflict();
+	</script>
+	<script>
+		var $jq = jQuery.noConflict();
+	</script>
+	
+		
+
+	<style type="text/css">
+		#dhtmltooltip {
+			position: absolute;
+			width: 630px;
+			border: 1px solid gray;
+			padding: 5px;
+			background-color: lightyellow;
+			visibility: hidden;
+			z-index: 100;
+		}
+		html {
+			font-family: Arial;
+		}
+		.unidadeDesativada {
+			background-color: #F2E28A;
+		}
+		#info-sistema span.ajuda{
+			padding: 0 5px;
+			margin: 0 5px;
+			padding: 0 5px;
+		    position: absolute;
+		    right: 350px;
+		}
+		#info-sistema span.ajuda a{
+			font-size: 1.1em;
+			font-weight: bolder;
+			color: #FFF;
+			margin-left: 2px;
+			letter-spacing: 0.1px;
+			word-spacing: 0.1px;
+			border-right: 1px solid #D99C44;
+			padding-right: 8px;
+		}
+		
+		#painel-usuario #menu-usuario li.mesa-virtual a{
+			background-image: url('/sipac/img_css/protocolo/monitor_rgb_16px.png');
+			background-repeat: no-repeat;
+			background-position: 4px;
+		}
+				
+	</style>
+
+	<script type="text/javascript">
+		var mensagem;
+		var painelSubsistemas;
+		var initSIPAC = function() {
+			mensagem = new Mensagem();
+			painelSubsistemas = new PainelSubsistemas();
+		}
+
+		YAHOO.util.Event.addListener(window,'load', initSIPAC);
+	</script>
+
+	<script type="text/javascript">
+		function mudaSistema(combo) {
+			document.location.href=combo.options[combo.selectedIndex].value;
+		}
+
+		function buscaInfoUsuario() {
+			window.open("/sipac/buscarUsuariosPopup.do?informacao","","width=500,height=400, left=200, scrollbars");
+		}
+	</script>
+</head>
+
+
+<body>
+
+<div id="dhtmltooltip"></div>
+
+<div id="container">
+
+
+
+
+
+
+
+
+
+
+	<!-- Cabe&#231;alho -->
+	<div id="cabecalho">
+		<div id="info-sistema">
+			<h1> <span>UFOPA - SIPAC</span> - </h1>
+			<h3> Sistema Integrado de Patrim&#244;nio, Administra&#231;&#227;o e Contratos </h3>
+
+			<span class="sistemas" id="combobox">
+				
+			</span>
+
+			
+				<span class="ajuda">
+					<a title="Ajuda" alt="Ajuda" href="https://docs.info.ufrn.br/doku.php?id=suporte:sipac:visao_geral" target="_blank">
+						Ajuda?
+					</a>
+				</span>
+			
+			
+			<div id="tempoSessao" style="margin-right: 170px;"></div>
+			<span class="sair-sistema">
+				
+				
+					<a href="/sipac/logoff.do"> SAIR </a>
+				
+			</span>
+
+		</div><!-- Fim: info-sistema -->
+
+		<div id="painel-usuario">
+
+			
+
+				<div id="menu-usuario">
+					<ul>
+						
+						<li class="menu-principal"><span id="menu1">
+
+							
+								<span id="modulos">
+									<a href="#" id="show-modulos-sipac"> M&#243;dulos </a>
+								</span>
+							
+							
+
+						</span></li>
+
+						
+							<li class="caixa-postal"> <a href="/sipac/abrirCaixaPostal.jsf?sistema=1"> 
+							
+							Caixa Postal					
+							
+							
+							</a></li>
+						
+						
+						
+						
+						
+						
+						<li class="menu-unidade">
+							<span id="menu2">
+								
+										<a href="/sipac/portal_aluno/index.jsf">Portal do Aluno</a>
+									
+								
+							</span>
+						</li>
+						
+						<li class="dados-pessoais">
+							
+								<a href="#" onclick="window.open('/sipac/alterar_dados.jsf','','width=670,height=430, top=100, left=100, scrollbars' )">Alterar Senha</a>
+							
+							
+						</li>
+						
+						
+						
+					</ul>
+				</div>
+				
+				
+				
+				<div id="info-usuario">
+
+					<p class="orcamento"> Or&#231;amento: 
+						<strong>
+							
+								2025
+							
+						</strong>
+					</p>
+					<p class="usuario">
+
+				    	
+				        
+					 		  CL&#201;O MARQUES BRASIL
+					 	
+
+					</p>
+					<p class="unidade">
+						
+								<a href="/sipac/alteraUnidade.do?acao=7"><img src="/sipac/img_css/geral/trocar.gif" border="0" alt="Modificar a Unidade do Usu&#225;rio" title="Modificar a Unidade do Usu&#225;rio"/></a>
+			    		
+		    			
+								INSTITUTO DE ENGENHARIA E GEOCI&#202;NCIAS (11.01.09)
+						
+					</p>
+				</div>
+
+			
+			<div id="menu-principal"></div>
+		</div><!-- Fim: painel-usuario -->
+				
+	</div><!-- Fim: Cabe&#231;alho -->
+
+	<script type="text/javascript">
+
+		function entrar(link) {
+			document.location.href = link;
+		}
+
+	</script>
+	
+	
+		<script src="/shared/javascript/STICookieConsent.js"></script>
+		<script>
+		    document.addEventListener("DOMContentLoaded", () => {
+		    	generateCookieConsentModal("SIPAC", "N&#243;s usamos cookies para melhorar sua experi&#234;ncia de navega&#231;&#227;o no portal. Ao utilizar o %sitename%, voc&#234; concorda com a pol&#237;&#173;tica de monitoramento de cookies. Para ter mais informa&#231;&#245;es sobre como isso &#233; feito e como remover, acesse a <a href=%cookie-policy%>Pol&#237;tica de Privacidade</a>. Para saber como a UFRN trata os dados, acesse a <a href=%privacy-policy%> Pol&#237;&#173;tica de cookies</a>. Se voc&#234; concorda, clique em %button-text%.", "https://ufrn.br/institucional/politica-de-privacidade-e-termos-de-uso", "https://ufrn.br/institucional/politica-de-cookies");
+		    })
+		</script>
+	
+	
+
+
+
+
+
+
+
+
+
+
+	<div id="conteudo">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="menu-dropdown" style="padding: 4px;">
+<div class="wrapper">
+
+<form id="formmenuadm" name="formmenuadm" method="post" action="/sipac/portal_aluno/index.jsf" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="formmenuadm" value="formmenuadm" />
+
+	<input id="menu_aluno" type="hidden" name="jscook_action"/>
+
+<script type="text/javascript">var formmenuadm_menuaaluno_menu =
+[['<img src="/sipac/img_css/portal_admin/requisicoes.png"/>', 'Compra de Materiais Informacionais', null, 'formmenuadm', null,[null, 'Cadastrar requisi&#231;&#227;o', 'formmenuadm_menuaaluno_menu:L]#{portalAdministrativo.redirecionarParametro};/listaReqBiblioteca.do?acao=<%=br.ufrn.sipac.requisicoes.biblioteca.struts.TiposCmdReqBiblioteca.LISTA_REQ_CAD_ENV%>', 'formmenuadm', null],
+[null, 'Modificar requisi&#231;&#227;o', 'formmenuadm_menuaaluno_menu:L]#{portalAdministrativo.redirecionarParametro};/listaReqBiblioteca.do?acao=<%=br.ufrn.sipac.requisicoes.biblioteca.struts.TiposCmdReqBiblioteca.MODIFICACAO%>', 'formmenuadm', null],
+[null, 'Acompanhar Solicita&#231;&#227;o de Materiais Informacionais', 'formmenuadm_menuaaluno_menu:L]#{portalAdministrativo.redirecionarParametro};/manipulaReqBiblioteca.do?inicio=true&acao=<%=br.ufrn.sipac.requisicoes.biblioteca.struts.TiposCmdReqBiblioteca.LISTA_LIVROS_ATENDIDOS%>', 'formmenuadm', null]],
+['<img src="/sipac/img_css/portal_admin/despesas.png"/>', 'Aux&#237;lio Financeiro', null, 'formmenuadm', null,[null, 'Minhas Solicita&#231;&#245;es de Aux&#237;lio Financeiro', 'formmenuadm_menuaaluno_menu:A]#{consultaRequisicaoAuxilioFinanceiroMBean.inicioConsultaMinhasSolicReqAuxilio}', 'formmenuadm', null],
+[null, 'Presta&#231;&#227;o de Contas de Aux&#237;lio Financeiro', null, 'formmenuadm', null,[null, 'Cadastrar Presta&#231;&#227;o de Contas', 'formmenuadm_menuaaluno_menu:A]#{prestacaoContaAuxilioEstudanteMBean.inicioListagemEstudante}', 'formmenuadm', null],
+[null, 'Modificar Presta&#231;&#227;o de Contas', 'formmenuadm_menuaaluno_menu:A]#{editarPrestacaoContaAuxilioEstudanteMBean.inicioListagemEstudante}', 'formmenuadm', null],
+[null, 'Acompanhar Presta&#231;&#227;o de Contas', 'formmenuadm_menuaaluno_menu:A]#{editarPrestacaoContaAuxilioEstudanteMBean.inicioListagemAcompanhamentoEstudante}', 'formmenuadm', null]]],
+['<img src="/sipac/img_css/portal_admin/protocolo.png"/>', 'Processos', null, 'formmenuadm', null,[null, 'Assinar Documentos <font color=\'red\'>(0)</font>', 'formmenuadm_menuaaluno_menu:A]#{mesaVirtualMBean.entrarMesaVirtualCatAssinaturaDocumentos}', 'formmenuadm', null],
+[null, 'Consulta P&#250;blica de Processos', 'formmenuadm_menuaaluno_menu:A]#{mesaVirtualMBean.entrarMesaVirtualCatConsultaProcessoDetalhado}', 'formmenuadm', null]],
+['<img src="/sipac/img_css/portal_admin/restaurante.gif"/>', 'Restaurante', null, 'formmenuadm', null,[null, 'Saldo do Cart&#227;o', 'formmenuadm_menuaaluno_menu:A]#{saldoCartao.iniciar}', 'formmenuadm', null]],
+['<img src="/sipac/img_css/portal_admin/consultas.png"/>', 'Consultas', null, 'formmenuadm', null,[null, 'Cat&#225;logo Telef&#244;nico', 'formmenuadm_menuaaluno_menu:A]#{consultaPublicaTelefones.entrarConsultaCatalogo}', 'formmenuadm', null]]];</script><div id="formmenuadm_menuaaluno_menu"></div>
+<script type="text/javascript">	if(window.cmDraw!=undefined) { cmDraw ('formmenuadm_menuaaluno_menu', formmenuadm_menuaaluno_menu, 'hbr', cmThemeOffice, 'ThemeOffice');}</script><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id3" />
+</form>
+</div>
+</div>
+
+
+
+
+    <script type="text/javascript">
+    	JAWR.loader.style('/bundles/css/sipac_base.css', 'all');
+		JAWR.loader.style('/shared/css/ufrn_print.css', 'print');
+	
+    	JAWR.loader.script('/bundles/js/scriptaculous.js');
+    	JAWR.loader.script('/javascript/ajaxtags/overlibmws.js');
+    	JAWR.loader.script('/javascript/paineis/noticias.js');
+    </script>
+
+	<link rel="stylesheet" type="text/css" media="all" href="/sipac/cssBundles/N209271150/javascript/ajaxtags/css/ajaxtags.css" />
+
+	<link rel="stylesheet" type="text/css" media="all" href="/sipac/cssBundles/N1658479027/portal_administrativo/include/portal_administrativo.css" />
+
+	<script type="text/javascript" src="/sipac/jsBundles/250230496/javascript/painel-unidade.js" ></script>
+
+
+<style type="text/css">
+	html {
+		font-family: Arial;
+	}
+	div.abaPortal {
+		height: 300px; 
+		overflow: auto;
+	}
+	.rich-tabpanel{
+		height: 300px;
+		overflow: auto;
+	}
+</style>
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+
+<div id="corpo-ext" class="corpo-ext">
+<div id="menu-ext" ></div>
+</div>
+
+<div id="menus">
+ <!-- menu Lateral Direita -->
+ <div id="menu_lateral_direita">
+
+  <!-- Perfil Usuario -->
+  <div class="menu_lateral_direita_interno">
+   <table>
+    <tr>
+     <td width="90%" valign="top" align="center" style="font-size: 10px;"><br />
+	    <a href="/sipac/abrirCaixaPostal.jsf?sistema=1" > Caixa Postal </a> <br /><br />
+  		<a href="../perfil.jsf">Trocar Foto</a> <br /><br />
+  	    <a href="../perfil.jsf">Editar Perfil</a> <br /><br/>
+  	    
+			<a href="#" onclick="window.open('/sipac/alterar_dados.jsf','','width=670,height=430, top=100, left=100, scrollbars' )">Alterar Senha</a>
+		
+		
+  	    <a href="#" id="j_id_jsp_1382520937_20" name="j_id_jsp_1382520937_20" onclick="A4J.AJAX.Submit(null,event,{'similarityGroupingId':'j_id_jsp_1382520937_20','parameters':{'j_id_jsp_1382520937_20':'j_id_jsp_1382520937_20'} ,'containerId':'j_id_jsp_1382520937_0','actionUrl':'/sipac/portal_aluno/index.jsf'} );return false;"></a>
+     </td>
+     <td>
+	     
+			<img src="https://arquivos-producao.ufopa.edu.br/arquivos/202322310381ea781199adaaf3398337/SONY_1694022153086.jpg" width="100" height="125"/>
+		 
+		 
+	 </td>
+    </tr>
+   </table>
+   <hr>
+     
+	   <div id="agenda-aluno">
+	   
+		   
+				<h5 align="center"> DADOS DO DISCENTE </h5>
+				<br />
+				<table style="font-size: 9px;">
+					<tr>
+						<td>Nome: </td>
+						<td>CL&#201;O MARQUES BRASIL </td>
+					</tr>
+					<tr>
+						<td> Matr&#237;cula: </td>
+						<td> 2021005352 </td>
+					</tr>
+					<tr>
+						<td> Curso: </td>
+						<td> CI&#202;NCIA DA COMPUTA&#199;&#195;O </td>
+					</tr>
+					<tr>
+						<td> N&#237;vel: </td>
+						<td> Gradua&#231;&#227;o </td>
+					</tr>
+					<tr>
+						<td> Status: </td>
+						<td> ATIVO </td>
+					</tr>
+					<tr>
+						<td> E-Mail: </td>
+						<td>
+							cleobrasil25@gmail....
+						</td>
+					</tr>
+					
+					
+				</table>
+		   
+
+		</div>
+  </div>
+  <!-- Fim Perfil usuario  -->
+  
+  
+ </div><!-- Fim menu Lateral Direita -->
+ <div> 	
+	 
+		<script type="text/javascript">
+		var fcontent=new Array()
+		
+		</script>
+		<div id="noticias-portal">
+			
+			
+			<p class="noticia destaque"> <br/>N&#227;o h&#225; not&#237;cias cadastradas.</p>
+			
+		</div>
+	 
+	 <!-- Fim noticias -->
+	
+	
+	 <!-- Operacoes do extrato  -->
+	 <div id="operacoes_extrato" style="height: 300px">
+		
+		<script type="text/javascript">RichFaces.tabPanel['j_id_jsp_1382520937_21']={'ontabchange':'','id':'j_id_jsp_1382520937_21'} ;</script><table border="0" cellpadding="0" cellspacing="0" class="rich-tabpanel " id="j_id_jsp_1382520937_21" style="width:100%;height:300px"><tbody><tr><td align="left" class="rich-tab-bottom-line "><form id="j_id_jsp_1382520937_21:_form" name="j_id_jsp_1382520937_21:_form" method="post" style="margin:0; padding:0; display: inline;" action="/sipac/portal_aluno/index.jsf"><!--table  border="0" cellpadding="0" cellspacing="0" style="position:relative;top:1px"--><table border="0" cellpadding="0" cellspacing="0"><tr><td><img alt="" height="1" src="/sipac/a4j/g/3_3_3.Finalimages/spacer.gif.jsf" style="width: 1px; ;border:0" /></td><td id="j_id_jsp_1382520937_22_cell" style="height: 100%; vertical-align: bottom;" class="rich-tabhdr-cell-active"><table border="0" cellpadding="0" cellspacing="0" id="j_id_jsp_1382520937_22_shifted" onclick="if (RichFaces.onTabChange(event, 'j_id_jsp_1382520937_21','j_id_jsp_1382520937_22')) RichFaces.switchTab('j_id_jsp_1382520937_21','j_id_jsp_1382520937_22','j_id_jsp_1382520937_22');" style="position:relative; top:1px;;height : 100%; "><tr><td class="rich-tabhdr-side-border"><img alt="" height="1" src="/sipac/a4j/g/3_3_3.Finalimages/spacer.gif.jsf" style="border:0" width="1" /></td><td class="rich-tabhdr-side-cell"><table border="0" cellpadding="0" cellspacing="0" style="height: 100%; width: 100%;"><tr><td id="j_id_jsp_1382520937_22_lbl" onmouseover="RichFaces.overTab(this);" onmouseout="RichFaces.outTab(this);" class="rich-tab-header rich-tab-active    ">Livros Solicitados</td></tr></table></td><td class="rich-tabhdr-side-border"><img alt="" height="1" src="/sipac/a4j/g/3_3_3.Finalimages/spacer.gif.jsf" style="border:0" width="1" /></td></tr></table></td><td><img alt="" height="1" src="/sipac/a4j/g/3_3_3.Finalimages/spacer.gif.jsf" style="width: 1px; ;border:0" /></td></tr></table><div style="display: none;"><input autocomplete="off" id="j_id_jsp_1382520937_21_input" name="j_id_jsp_1382520937_21" type="hidden" value="j_id_jsp_1382520937_22" /><script type="text/javascript">RichFaces.panelTabs['j_id_jsp_1382520937_21']=[{'cellActiveClass':'rich\x2Dtabhdr\x2Dcell\x2Dactive','ontabenter':'','inactiveClass':'rich\x2Dtab\x2Dheader rich\x2Dtab\x2Dinactive    ','id':'j_id_jsp_1382520937_22','ontableave':'','activeClass':'rich\x2Dtab\x2Dheader rich\x2Dtab\x2Dactive    ','name':'j_id_jsp_1382520937_22','cellInactiveClass':'rich\x2Dtabhdr\x2Dcell\x2Dinactive'} ] ;</script></div><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id3" /></form></td></tr><tr><td id="j_id_jsp_1382520937_22" style=";height:100%"><table border="0" cellpadding="10" cellspacing="0" class="rich-tabpanel-content-position" width="100%"><tr><td class="rich-tabpanel-content  " style="; ">
+		        	<div class="abaPortal">
+		        		
+
+	<center>
+	<p><font color="red">N&#227;o Existem Livros solicitados pelo seu
+	usu&#225;rio.</font></p>
+	</center>
+
+		        	</div>
+		        </td></tr></table></td></tr></tbody></table>
+	</div>
+	
+ </div>
+
+
+
+	
+	
+	<br>
+	
+	
+		
+		<center>
+		
+			
+				<br><a href="/sipac/portal_aluno/index.jsf">Portal do Aluno</a>
+			
+		
+			
+			
+		</center>
+		
+	
+	
+	<div class="clear"> </div>
+	<br/>
+
+	</div> 
+
+	<div id="rodape">
+		<p>	
+		SIPAC | Centro de Tecnologia da Informa&#231;&#227;o e Comunica&#231;&#227;o - (00) 0000-0000 | Copyright &copy; 2005-2025 - UFRN - jboss-sipac-06.ufopa.edu.br.srv6sipac
+		 
+			 - <a onclick="javascript:versao();">vSNAPSHOT</a>
+				
+		</p>
+	</div>
+
+
+</div>  
+
+<div id="painel-mensagem-envio"> </div>
+<div id="painel-subsistemas"> </div>
+
+
+
+
+
+
+
+
+<!-- MYFACES JAVASCRIPT -->
+
+</body>
+
+
+</html>
+ 
+	<script type="text/javascript" charset="UTF-8">
+		function versao(){
+			var msg='';
+			msg+='SIPAC SNAPSHOT,  publicado em: 30/04/2025 11:14\n\n';
+			msg+='Depend\u00eancias:\n';
+			msg+='Arquitetura 4.4.9\n';
+			msg+='Entidades Comuns 2.3.12\n';
+			msg+='Servicos Integrados 2.1.2\n';
+			msg+='SharedResources 2.1.8\n\n';
+			msg+='Copyright SINFO/UFRN';
+			alert(msg);
+		}	
+	</script>
+
+
+
+<script language="javascript">
+Relogio.init(90);
+</script>
+
+<script type="text/javascript">
+	PainelNoticias.init('/sipac/portal_administrativo/viewNoticia.jsf');
+	var elems = Ext.DomQuery.select('.ThemeOfficeMenuItemText');
+	for (var i = 0; i < elems.length; i++) {
+		if (elems[i].innerHTML == 'Chamado Patrimonial') {
+			Ext.get(elems[i]).on('click', function() {
+				mensagem.show(4, '/sipac/enviaMensagem.do?acao=5&mensagem.tipo=' + 4);
+			});
+		}
+	}
+</script>

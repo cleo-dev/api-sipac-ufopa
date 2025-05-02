@@ -1,0 +1,16 @@
+util/Login.class
+model/Usuario.class
+exception/ExcecaoUsuarioSemCadastroRU.class
+exception/ExcecaoUsuarioSenhaInvalido.class
+util/ColecaoRegex.class
+util/Endpoints.class
+helper/AnalisadorRegex.class
+exception/ExcecaoErroDeConectividade.class
+model/HistoricoTransacoes.class
+Main.class
+model/Transacao.class
+util/ServicoHttp.class
+model/Carteira.class
+model/Perfil.class
+controller/ControladorUsuario.class
+model/Credenciais.class
