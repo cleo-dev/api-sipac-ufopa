@@ -52,7 +52,7 @@ raspando as páginas do Restaurante Universitário (RU) para devolver:
 ## Instalação
 
 ```bash
-git clone https://github.com/seu-usuario/ru-sipac-api.git
+git clone https://github.com/cleo-dev/api-sipac-ufopa
 cd ru-sipac-api
 mvn clean package        # compila o projeto
 ```
